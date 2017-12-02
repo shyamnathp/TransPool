@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +17,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -95,8 +97,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-               //         .setAction("Action", null).show();
+                Snackbar.make(view, "No functionality added yet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 
             }
         });
@@ -125,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("Shyam");
+        txtName.setText("User");
         txtWebsite.setText("Unisys India Pvt Ltd");
 
         // loading header background image
@@ -203,26 +204,32 @@ public class MainActivity extends AppCompatActivity {
         switch (navItemIndex) {
             case 0:
                 // home
+                Log.d("load case","0");
                 HomeFragment homeFragment = new HomeFragment();
                 return homeFragment;
             case 1:
                 // photos
+                Log.d("load case","0");
                 PhotosFragment photosFragment = new PhotosFragment();
                 return photosFragment;
             case 2:
                 // movies fragment
+                Log.d("load case","1");
                 MoviesFragment moviesFragment = new MoviesFragment();
                 return moviesFragment;
             case 3:
                 // notifications fragment
+                Log.d("load case","2");
                 NotificationsFragment notificationsFragment = new NotificationsFragment();
                 return notificationsFragment;
 
             case 4:
                 // settings fragment
+                Log.d("load case","3");
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
             default:
+                Log.d("load case","4");
                 return new HomeFragment();
         }
     }

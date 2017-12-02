@@ -115,23 +115,7 @@ public class SearchActivity extends KinveyActivity {
      * This method is used to display maps and show current pickup location on screen
      */
     private void displayMap(){
-        get_place = (TextView)findViewById(R.id.textView9);
-        get_place.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
 
-                Intent intent;
-                try {
-                    intent = builder.build(getApplicationContext());
-                    startActivityForResult(intent,PLACE_PICKER_REQUEST);
-                } catch (GooglePlayServicesRepairableException e) {
-                    e.printStackTrace();
-                } catch (GooglePlayServicesNotAvailableException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
     }
 
     /**

@@ -7,16 +7,19 @@
     <string name="closeDrawer">close_drawer</string>
 
     <!-- Navigation Drawer menu labels -->
-    <string name="nav_home">Times</string>
+    <string name="nav_home">Pool Ride</string>
     <string name="nav_photos">Search Ride</string>
     <string name="nav_movies">Offer Ride</string>
     <string name="nav_notifications">Logout</string>
     <string name="nav_settings">Settings</string>
     <string name="nav_about_us">About Us</string>
 
+    <!-- request string -->
+    <string name="delete">Request</string>
+
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
-        <item>Sign Up</item>
+        <item>Transpool</item>
         <item>Travel Times</item>
         <item>Pool</item>
         <item>Set Locations</item>
@@ -44,10 +47,11 @@
         completions."
     </string>
 
-    <string name="google_place_api">AIzaSyAKvo1BB7_fjF_6RF_DzM7JfdPtJRoO3YQ</string>
+    <string name="google_place_api">AIzaSyCsH_cqDZAb24W8RkzevPkyHNQ4uFzJizA</string>
 
     <string name="pref_previously_started">This field is required</string>
     <string name="title_activity_kinvey">KinveyActivity</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_ride_confirmation">RideConfirmation</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
